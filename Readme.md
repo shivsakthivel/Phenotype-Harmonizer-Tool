@@ -102,7 +102,7 @@ read.table('height_baseline_1_harmonized.tsv', header = TRUE)
 
 Here is a snippet of the harmonized dataset, created as an output:
 
-![](C:\Users\shivs\Downloads\Dataset.PNG)
+![](Dataset.PNG)
 
 
 
