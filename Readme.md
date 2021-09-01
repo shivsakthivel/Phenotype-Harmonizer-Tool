@@ -120,25 +120,25 @@ Finally, the fifth column **age_at_height_baseline_1 **provides information abou
 
 The other file that is generated will be named **height_baseline_1.pdf**, which contains descriptive visualizations of the distributions in the dataset. The first plot will be an overall distribution across the entirety of the harmonized dataset. The type of plot will depend on whether the variable is continuous or discrete. Here, height measured in centimeters is a continuous variable, and so, a histogram is generated as follows:
 
-![](C:\Users\shivs\Downloads\overall.PNG)
+![](overall.PNG)
 
 
 
 The histogram also shows a smooth curve that follows the general shape of the distribution. After this first plot, there are plots generated for each of the sub-cohorts that were concatenated to form the overall dataset. This provides information about the nature of participants in those studies, as it pertains to this specific variable. Since the different studies have different designs and exclusion criteria, the distributions are often not similar across different studies. The following picture shows the distribution for one of the sub-cohorts, ARIC:
 
-![](C:\Users\shivs\Downloads\aric.PNG)
+![](aric.PNG)
 
 
 
 Not all the phenotype concepts are continuous variables. For example, the phenotype concept race_1 is a discrete variable with encoded values for the different races represented in the studies. Since a histogram is not an appropriate visualization for categorical/discrete variables, a standard bar plot is generated:
 
-![](C:\Users\shivs\Downloads\categorical.PNG)
+![](categorical.PNG)
 
 
 
 Compared to continuous variables, the difference between study designs for the different cohorts becomes much more evident in discrete variables. For instance, since all the participants in the Amish TOPMed study all identify as White, here is the bar plot generated for that sub-cohort of participants:
 
-![](C:\Users\shivs\Downloads\amish.PNG)
+![](amish.PNG)
 
 
 
