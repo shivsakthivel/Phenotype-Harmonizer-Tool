@@ -114,7 +114,7 @@ The fourth column is the harmonized phenotype concept: **height_baseline_1**. Th
 
 
 
-Finally, the fifth column **age_at_height_baseline_1 **provides information about the age of the subject at the point of measuring the phenotype concept. Not all phenotype concepts have information pertinent to age, recorded in their documentation. This is indicated in the has_age_variable (binary variable) found in the respective JSON file. The tool handles this, and will instead create a dataset with just the first four columns in the event that the age variable is not present. So, **a harmonized dataset will always either have 4 or 5 columns**, with the first four being standard across all 63 variables.
+Finally, the fifth column **age_at_height_baseline_1** provides information about the age of the subject at the point of measuring the phenotype concept. Not all phenotype concepts have information pertinent to age, recorded in their documentation. This is indicated in the has_age_variable (binary variable) found in the respective JSON file. The tool handles this, and will instead create a dataset with just the first four columns in the event that the age variable is not present. So, **a harmonized dataset will always either have 4 or 5 columns**, with the first four being standard across all 63 variables.
 
 
 
