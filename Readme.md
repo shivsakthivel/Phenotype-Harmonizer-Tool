@@ -6,6 +6,8 @@
 
 The TOPMed Program is an initiative by the NHLBI to create and compile more resources for research in heart and lung problems. As such, TOPMed consists of more than 80 comprehensive studies with varying study designs and objectives. The goal of phenotype harmonization is to horizontally concatenate datasets for individual phenotype variables across different studies. Researchers at the University of Washington have created a system and syntax for describing the harmonization process, and have made that documentation available on their GitHub repository (https://github.com/UW-GAC/topmed-dcc-harmonized-phenotypes/). Thus far, the repository contains the complete documentation for 63 separate harmonized phenotype variables, across 17 distinct studies.
 
+(Update 10/04/2021) The documentation from the UW-GAC has been expanded to include variables related to Atherosclerosis incidents and priob=rs, as well as sleep. The documentation for the Demographic and Baseline covariate variables has also been updated to include more studies and newer versions of other contained studies.
+
 
 
 ## Objective
@@ -78,6 +80,7 @@ The tool is able to successfully handle all 63 phenotype variables, with only 1 
 | Lower Observation Count due to dropped missing studies       | 16              | All the variables for Blood Pressure and Baseline Covariates, Ethnicity and Geographic Site (Demographics), Fasting Lipids, HDL, Cholesterol and Triglycerides (Lipids), VTE Case Status (VTE) |
 | Higher Observation Count (Presumed reason is the change in version accession) | 3               | Sub-cohort, Race, Sex (Demographics)                         |
 
+(Updated)
 
 
 ## Example use of tool
