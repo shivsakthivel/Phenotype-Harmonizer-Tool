@@ -6,7 +6,7 @@
 
 The TOPMed Program is an initiative by the NHLBI to create and compile more resources for research in heart and lung problems. As such, TOPMed consists of more than 80 comprehensive studies with varying study designs and objectives. The goal of phenotype harmonization is to horizontally concatenate datasets for individual phenotype variables across different studies. Researchers at the University of Washington have created a system and syntax for describing the harmonization process, and have made that documentation available on their GitHub repository (https://github.com/UW-GAC/topmed-dcc-harmonized-phenotypes/). Thus far, the repository contains the complete documentation for 63 separate harmonized phenotype variables, across 17 distinct studies.
 
-(Update 10/04/2021) The documentation from the UW-GAC has been expanded to include variables related to Atherosclerosis incidents and priob=rs, as well as sleep. The documentation for the Demographic and Baseline covariate variables has also been updated to include more studies and newer versions of other contained studies.
+(Update 10/04/2021) The documentation from the UW-GAC has been expanded to include variables related to Atherosclerosis incidents and priors, as well as sleep. The documentation for the Demographic and Baseline covariate variables has also been updated to include more studies and newer versions of other contained studies.
 
 
 
@@ -81,8 +81,13 @@ The tool is able to successfully handle all 63 phenotype variables, with only 1 
 | Higher Observation Count (Presumed reason is the change in version accession) | 3               | Sub-cohort, Race, Sex (Demographics)                         |
 
 (Updated)
+More variables related to atherosclerosis and sleep duration were added to the documentation. While there isn't yet an absolute method of verifying the observation counts, from a qualitative perspective, the harmonization process was successful for the available studies. Here is a summary of the updates:
 
-
+| Category                                      | No of Variables | Notes                                                 |
+| --------------------------------------------- | --------------- | ----------------------------------------------------- |
+| New Variables                                 | 17              | These include all the Atherosclerosis Events incident (8), Atherosclerosis Events prior (6), race_us and hispanic_or_latino (Demographics) and Sleep Duration |
+| Updates to the versions of previous variables | 8               | All the Baseline Covariates variables (5) and annotated_sex, geographic_site and subcohort from Demographics |
+| Depracated Variables (Removed from repo)      | 2               | race_1 is replaced by race_us, while ethnicity has been removed entirely. |
 ## Example use of tool
 
 This section will illustrate the use of the tool for one of the 63 harmonized phenotype variables, the height variable. According to the documentation available through the UW-GAC, the variables are named as a combination of the phenotype concept and the concept variant. So, the height variable is named height_baseline_1 on the documentation, and this is the variable name to be used in the harmonization. So, the first step is to run the following line on the terminal, after verifying that the working directory contains the necessary files.
@@ -152,3 +157,6 @@ This, of course, is much different from the distributions in the other sub-cohor
 ## Status
 
 From the data and files available at SRTI and the documentation available through the TOPMed DCC, all 63 phenotype concepts were harmonized to the maximum possible extent, with all the issues raised throughout this process, resolved at this point in time. As such, all 63 harmonized datasets and their 63 companion files are available for use. The dataset generation process is completely reproducible, in the event that further documentation for other phenotype concepts are released in the future by the DCC (Some customization might be required still, but a bulk of the code is generalizable as long as the documentation format remains consistent). 
+
+(Update 10/04/2021)
+Currently, the count of harmonized phenotypes stands at 85. This provided an opportunity to see if the tool can replicate the harmonization process for documentation released after its development. Apart from a few issues encountered on 1 variable, the script worked without issue for the additional 22 phenotype datasets added.
