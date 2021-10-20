@@ -87,7 +87,7 @@ More variables related to atherosclerosis and sleep duration were added to the d
 | --------------------------------------------- | --------------- | ----------------------------------------------------- |
 | New Variables                                 | 17              | These include all the Atherosclerosis Events incident (8), Atherosclerosis Events prior (6), race_us and hispanic_or_latino (Demographics) and Sleep Duration |
 | Updates to the versions of previous variables | 8               | All the Baseline Covariates variables (5) and annotated_sex, geographic_site and subcohort from Demographics |
-| Depracated Variables (Removed from repo)      | 2               | race_1 is replaced by race_us, while ethnicity has been removed entirely. |
+| Deprecated Variables (Removed from repo)      | 2               | race_1 is replaced by race_us, while ethnicity has been removed entirely. |
 ## Example use of tool
 
 This section will illustrate the use of the tool for one of the 63 harmonized phenotype variables, the height variable. According to the documentation available through the UW-GAC, the variables are named as a combination of the phenotype concept and the concept variant. So, the height variable is named height_baseline_1 on the documentation, and this is the variable name to be used in the harmonization. So, the first step is to run the following line on the terminal, after verifying that the working directory contains the necessary files.
